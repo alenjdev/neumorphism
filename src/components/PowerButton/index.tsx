@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { FC, useRef, useState } from "react";
 import "./index.css";
 
-const possibleGreens = ["#e2fff8", "#f3fff2", "#FFFFFF"];
+// const possibleGreens = ["#e2fff8", "#f3fff2", "#FFFFFF"];
 const getShadows = (_: boolean, darkMode: boolean) => {
   const off = darkMode
     ? `-7px -7px 7px rgba(255, 255, 255, 0.05),
