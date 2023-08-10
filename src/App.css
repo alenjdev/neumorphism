@@ -43,3 +43,44 @@
 .neon {
   stroke: #7a7a7a;
 }
+
+h1 {
+  position: relative;
+  /* outline: 2px solid red; */
+  max-width: max-content;
+  letter-spacing: 1px;
+  font-family: "Poppins", monospace;
+}
+
+h1::after,
+h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+h1::before {
+  background-color: #091921;
+  animation: typewriter 6s steps(18) 1s forwards;
+}
+
+h1::after {
+  width: 0.125rem;
+  background-color: black;
+  animation: typewriter 6s steps(18) 1s forwards, blink 750ms steps(18) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background-color: transparent;
+  }
+}

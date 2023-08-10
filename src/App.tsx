@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styled from "@emotion/styled";
 import "./App.css";
 import { PowerButton } from "./components/PowerButton";
 import { Theme } from "./types";
+import { LandingPage } from "./pages/Landing";
+import { Player } from "./pages/Player";
 
 function App() {
   const [theme, setTheme] = useState<Theme>("dark");
@@ -12,7 +14,12 @@ function App() {
       onDoubleClick={() => setTheme((p) => (p === "dark" ? "light" : "dark"))}
       theme={theme}
     >
-      <PowerButton theme={theme} />
+      {/* <p>{import.meta.env.VITE_MY_SECRET}</p> */}
+      {/* <LandingPage /> */}
+      {/* <h1>Crafting Immersive</h1>
+      <h2>Unleashing the Potential of Tomorrow</h2> */}
+      {/* <PowerButton theme={theme} /> */}
+      <Player />
     </Container>
   );
 }

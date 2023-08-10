@@ -1,6 +1,7 @@
 * {
-  overflow: hidden;
+  /* overflow: hidden; */
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body,
@@ -8,3 +9,15 @@ html {
   margin: 0;
   padding: 0;
 }
+
+/* * {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #091921;
+  color: #efefef;
+} */
